@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Logo/mortarboard.gif">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Учебная платформа</title>
+</head>
+<body>
+    <!-- header section starts -->
+    <header class="header">
+        <section class="flex"> 
+            <a href="#home" class="logo"><img src="Logo/web-design.svg" height="20" alt=""></a>
+            <nav class="navbar">
+                <a href="#home">Главная</a>
+                <a href="#course">Программа</a>
+                <a href="#price">Курсы</a>
+                <a href="#footer">Связь с нами</a>
+                <a href="./basicshtml/basicshtml.html">Основы HTML</a>
+                <a href="basicscss/basicscss.html">Основы CSS</a>
+                <a href="registration/index.php"><i class="fa-solid fa-circle-user"></i></a>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+    </header>
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>Веб-разработка. Быстрый старт. <span>Основы HTML5/CSS3</span></h3>
+                <a href="#contact" class="btn">Начать учиться</a>
+            </div>
+            <div class="image">
+                <img src="IMG/6.png">
+            </div>
+        </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- third section starts-->
+    <section class="count">
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-graduation-cap" style='color: #F9C80E'></i>
+                <div class="content">
+                    <h3>1+</h3>
+                    <p>Курс</p>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-user-graduate" style='color: #F86624'></i>
+                <div class="content">
+                    <h3>10+</h3>
+                    <p>Учеников</p>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-chalkboard-user" style='color: #EA3546'></i>
+                <div class="content">
+                    <h3>35+</h3>
+                    <p>Заданий</p>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-face-smile" style='color: #00B4D8'></i>
+                <div class="content">
+                    <h3>15+</h3>
+                    <p>Довольство</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- third section ends-->
+
+    <!-- cards course section starts -->
+    <section class="course" id="course">
+        <h1 class="heading">О курсе <span> — чему Вы научитесь</span></h1>
+        <div class="swiper course-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <!-- <img src="Web-development/coding.png" alt=""> -->
+                    <h3>1. Введение</h3>
+                    <p>Узнаем, что такое HyperText Markup Language и что он определяет. Обсудим основные понятия Всемирной паутины:
+                    веб-страница, веб-сервер. Узнаем, где найти перечень всех HTML-элементов и научимся добавлять разметку в обычный текст.
+                    Узнаем, что такое атрибуты, и зададим их некоторым HTML-элементам на странице.</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <!-- <img src="" alt=""> -->
+                    <h3>2. HTML5: База</h3>
+                    <p>Первое занятие, посвященное HTML, на котором мы познакомимся с языком гипертекстовой разметки - основой
+                    любого веб-сайта. Теги, атрибуты, особенности интерпретации, семантика и практика-практика-практика.
+                    Попутно освоишь основные инструменты веб-разработчика: редактор кода, отладчик.</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <!-- <img src="" alt=""> -->
+                    <h3>3. Основы HTML5</h3>
+                    <p>В изучение основ языка HTML включены следующие шаги: элементы и их
+                        виды, списки, размещение изображений, адреса, ссылки и якоря, таблцицы, формы, 
+                        создание гиперссылок и работа с ними.
+                    </p>
+                </div>
+                <div class="swiper-slide slide">
+                    <!-- <img src="" alt=""> -->
+                    <h3>4. Основы CSS3</h3>
+                    <p>В изучении основ языка CSS узнаем способы подключения, распространённые виды селекторов, включая 
+                        селекторы псевдоклассов и псевдоэлементов (синтаксис CSS). Изучим оформление страниц: 
+                        смена фона, текста, шрифта, единицы измерения, позиционирование и т.п.</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <!-- <img src="" alt=""> -->
+                    <h3>5. Продвинутая вёрстка</h3>
+                    <p>В этой части будут рассмотрены CSS animation и @keyframes. Всё про CSS отступы:
+                        padding и margin. CSS transform - трансформация.
+                    </p>
+                    <div class="lock"><i class="fa-solid fa-lock"></i></div>
+                </div>
+                <div class="swiper-slide slide">
+                    <!-- <img src="" alt=""> -->
+                    <h3>6. Погружение в адаптивность</h3>
+                    <p>Сайт, не адаптированный под мобильные устройства, просто не может считаться сайтом. Мы разберемся с темой media queries
+                    или медиа-запросов в CSS для создания отзывчивой (адаптивной) верстки. Ориентация на изучение Bootstrap в будущем
+                    </p>
+                    <div class="lock"><i class="fa-solid fa-lock"></i></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- cards course section ends -->
+
+    <!-- price course starts -->
+    <section class="price" id="price">
+        <h1 class="heading">Дополнительные курсы, которые<span style="color:#F9C80E"> Вы</span> сможете приобрести</h1>
+        <div class="box-container"> <!--!!!!!!-->
+            <div class="box">
+                <img src="IMG/bar-chart.png" alt="">
+                <h3 class="cost">4500 руб.</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="title">HTML5 для продвинутых</a>
+                    <p>Курс станет отличной стартовой площадкой для того, чтобы войти в мир IT.
+                    Получите необходимые навыки по работе с HTML5. В рамках курса Вы освоите синтаксис языка HTML5, ознакомитесь с основными элементами, тегами и т.д.
+                    </p>
+                    <div class="info">
+                        <h3><i class="far fa-clock" style="color:#00B4D8"></i>1,5 часа</h3>
+                        <h3><i class="far fa-calendar-alt" style="color:#F9C80E"></i>1,5 месяца</h3>
+                        <h3><i class="fas fa-book" style="color:#F86624"></i>2 модуля</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="IMG/bar-chart (2).png" alt="">
+                <h3 class="cost">4100 руб.</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="title">Sass/Scss для продвинутых</a>
+                    <p>На курсе будет рассмотрен препроцессор для внешнего вида HTML-документа.
+                        Это одна из базовых технологий в современном интернете. Поэтому HTML5 и
+                        Sass/Scss действуют в единой связке.
+                    </p>
+                    <div class="info">
+                        <h3><i class="far fa-clock" style="color:#F86624"></i>1,5 часа</h3>
+                        <h3><i class="far fa-calendar-alt" style="color:#662E9B"></i>2 месяца</h3>
+                        <h3><i class="fas fa-book" style="color:#F9C80E"></i>2 модуля</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="IMG/bar-chart (3).png" alt="">
+                <h3 class="cost">4500 руб.</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="title">Графический дизайн</a>
+                    <p>Курс графического дизайна помогает правильно преподносить свои товары и услуги.
+                    Хорошая презентация — это внятное изложение и хорошая подача. Это одинаково работает в публичных выступлениях и презентациях на сайтах.
+                    </p>
+                    <div class="info">
+                        <h3><i class="far fa-clock" style="color:#F9C80E"></i>1,5 часа</h3>
+                        <h3><i class="far fa-calendar-alt" style="color:#EA3546"></i>2 месяца</h3>
+                        <h3><i class="fas fa-book" style="color:#00B4D8"></i>8 модулей</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- price course ends -->
+    
+    <!-- footer section starts -->
+    <footer class="footer" id="footer">
+        <section>
+            <div class="share">
+                <a href="#" class="fab fa-telegram"></a>
+                <a href="#" class="fab fa-google-plus"></a>
+                <a href="#" class="fab fa-weixin"></a>
+            </div>
+            <div class="credit">&copy; Copyright 2023<span> WebDesign</span></div>
+        </section>
+    </footer>
+    <!-- footer section ends -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
