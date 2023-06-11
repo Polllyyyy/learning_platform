@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;800&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+    outline: none;border: none;
+    transition: .2s linear ;
+    text-decoration: none;
+}
+body{background-color: #f9f9f9;}
+.form-signin{
+    max-width: 550px;
+    padding: 20px;
+    margin: 100px auto;
+    background: #f9f9f9;
+    border: 1px solid #4d4d4d;
+}
+form h2{
+    color: #4d4d4d;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+input{
+    width: 100%;
+    margin: 15px 0px;
+    align-items: center;
+    font-size: 15px;
+    padding: 13px 0px;
+    color: #F9C80E;
+}
+input:{background: #00B4D8;}
+button{
+    background: linear-gradient(100deg, #F9C80E, #F86624, #662E9B, #00B4D8);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .5s;
+    border-radius: 30px;
+    padding: 13px;
+    color: white;
+    text-indent: 2px;
+    font-weight: bold;
+}
+button:hover{background-position: 0 0;}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+.but{
+     background: linear-gradient(110deg, #00B4D8, #F86624, #F9C80E, #662E9B);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .5s;
+    border-radius: 30px;
+    padding: 13px;
+    color: white;
+    text-indent: 2px;
+    font-weight: bold;
+}
+/* media queries */
+@media(max-width: 991px){
+    html{font-size: 55%;}
+    form{max-width: 400px;}
+    
+}
+@media(max-width: 768px){
+   
+}
+@media(max-width: 450px){
+    html{font-size: 50%;}
+}
+/* media queries */
