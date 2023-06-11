@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;800&display=swap');
+:root{
+    --blue: #00B4D8;
+    --purple: #662E9B;
+    --red: #EA3546;
+    --orange: #F86624;
+    --yellow: #F9C80E;
+    --light-grey: #f9f9f9;
+    --header-grey: #f0f0f0;
+    --grey: #4d4d4d;
+}
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    transition: .2s linear ;
+    text-decoration: none;
+}
+*::selection{
+    background-color: #fff;
+    color: var(--grey);
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 8rem;
+}
+::-webkit-scrollbar{height: .5rem;width: 1rem;}
+::-webkit-scrollbar-track{background-color: transparent;}
+::-webkit-scrollbar-thumb{
+    background-color: var(--blue);
+    border-radius: 5rem;
+}
+body{background-color: var(--light-grey);}
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+.heading{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--grey);
+    font-size: 4rem;
+}
+.count .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+.count .box-container .box{
+    background-color: #f0f0f0;
+    border-radius: .5rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    border: 1px solid var(--grey);
+}
+.header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background-color: var(--header-grey);
+    border-bottom: 1px solid var(--grey);
+}
+.header .flex{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .flex .navbar a{
+    margin-left: 2rem;
+    color: #4d4d4d;
+    font-size: 1.5rem;
+}
+.header .flex .navbar a:hover{color: var(--blue);}
+#menu-btn{
+    cursor: pointer;
+    color: #4d4d4d;
+    font-size: 2.2rem;
+    display: none;
+}
+.container{
+    padding-top: 50px;
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap:20px;
+}
+.container .main-video-container{
+   flex:1 1 730px;
+   border-radius: 5px;
+   box-shadow: 0 5px 15px rgba(0,0,0,.1);
+   background-color: #fff;
+   padding:30px;
+   border: 1px solid var(--grey);
+}
+.container .main-video-container .main-video{
+   margin-bottom: 15px;
+   border-radius: 5px;
+   width: 100%;
+}
+.container .main-video-container .main-vid-title{
+   font-size: 20px;
+   color: var(--orange);
+}
+.container .video-list-container{
+   flex:1 1 350px;
+   height: 485px;
+   overflow-y: scroll;
+   border-radius: 5px;
+   box-shadow: 0 5px 15px rgba(0,0,0,.1);
+   background-color: #fff;
+   padding:15px;
+   border: 1px solid var(--grey);
+}
+.container .video-list-container::-webkit-scrollbar{width: 10px;}
+.container .video-list-container::-webkit-scrollbar-track{
+   background-color: #fff;
+   border-radius: 5px;
+}
+.container .video-list-container::-webkit-scrollbar-thumb{
+   background-color: var(--orange);
+   border-radius: 5px;
+}
+.container .video-list-container .list{
+   display: flex;
+   align-items: center;
+   gap:15px;
+   padding:10px;
+   background-color: #eee;
+   cursor: pointer;
+   border-radius: 5px;
+   margin-bottom: 10px;
+   border: 1px solid var(--grey);
+}
+.container .video-list-container .list:last-child{margin-bottom: 0;}
+.container .video-list-container .list.active{background-color: var(--orange);border: 2px solid var(--grey);}
+.container .video-list-container .list.active .list-title{color:#fff;}
+.container .video-list-container .list .list-video{
+   width: 100px;
+   border-radius: 5px;
+}
+.container .video-list-container .list .list-title{
+   font-size: 17px;
+   color: var(--grey);
+}
+
+/*test*/
+.quiz-form{
+    width: 100%;
+    background: var(--header-grey);
+    padding: 12px;
+    margin: 0 auto;
+}
+.quiz-form p{
+    font-size: 15px;
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
+}
+.quiz-form label{
+    font-size: 15px;
+    padding: 25px 0px;
+}
+.btn-primary{
+    background: var(--orange);
+    padding: 10px;
+    margin-top: 25px;
+    color: #f0f0f0;
+    font-size: 16;
+}
+input{border: var(--orange);}
+span{color: var(--orange);}
+/*test*/
